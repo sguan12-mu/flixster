@@ -29,7 +29,7 @@ The following **additional** features are implemented:
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
-![gif](ki0gfTtd.gif)
+![gif](./screenshots/ki0gfTtd.gif)
 GIF created with [Kap](https://getkap.co/).
 
 ## Notes
