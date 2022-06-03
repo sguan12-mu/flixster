@@ -24,6 +24,7 @@ public class MovieDetailsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        // init binding
         activityMovieDetailsBinding = ActivityMovieDetailsBinding.inflate(getLayoutInflater());
         View view = activityMovieDetailsBinding.getRoot();
         setContentView(view);
