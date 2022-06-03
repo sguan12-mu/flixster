@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:background="#272727">
 
     <ImageView
         android:id="@+id/ivPoster"
-        android:layout_width="120dp"
+        android:layout_width="350dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentBottom="false"
         android:layout_marginStart="10dp"
@@ -18,37 +18,30 @@
 
     <TextView
         android:id="@+id/tvTitle"
-        android:layout_width="288dp"
+        android:layout_width="289dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="false"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginStart="140dp"
+        android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
-        android:layout_marginEnd="5dp"
-        android:layout_marginRight="1dp"
+        android:layout_marginEnd="10dp"
+        android:layout_toEndOf="@+id/ivPoster"
         android:fontFamily="sans-serif-black"
-        android:text="Movie Title"
-        android:textAppearance="@android:style/TextAppearance.Large"
-        android:textColor="#F8F8F8" />
+        android:text="TextView"
+        android:textColor="#F8F8F8"
+        android:textSize="24sp"
+        tools:text="Fast and Furious" />
 
     <TextView
         android:id="@+id/tvOverview"
-        android:layout_width="wrap_content"
+        android:layout_width="339dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/rbVoteAverage"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="false"
+        android:layout_below="@+id/tvTitle"
         android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginStart="140dp"
-        android:layout_marginTop="0dp"
-        android:layout_marginEnd="5dp"
-        android:layout_marginRight="5dp"
-        android:text="TextView"
-        android:textColor="#C1C1C1" />
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="21dp"
+        android:layout_toEndOf="@+id/ivPoster"
+        android:textColor="#C1C1C1"
+        tools:text="A spinoff of the blabhalbhalhdklsf" />
 
     <RatingBar
         android:id="@+id/rbVoteAverage"
@@ -58,8 +51,9 @@
         android:layout_below="@+id/tvTitle"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="false"
-        android:layout_marginStart="140dp"
-        android:layout_marginTop="0dp"
+        android:layout_marginStart="370dp"
+        android:layout_marginTop="2dp"
         android:numStars="5"
         android:stepSize="0.5" />
+
 </RelativeLayout>
